@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.transaction.sendmoney.InputNominalFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:background="#394EB6"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="683dp"
+            tools:layout_conversion_absoluteWidth="411dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="83dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/ic_baseline_monetization_on_24" />
+
+            <EditText
+                android:id="@+id/inputAmountTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:hint="Amount"
+                android:inputType="textPersonName"
+                android:textColor="#D1D1D1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonNextInputNominal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="411dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="411dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/ic_baseline_library_books_24" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:hint="Notes"
+                android:inputType="textPersonName"
+                android:textColor="#D6D6D6" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

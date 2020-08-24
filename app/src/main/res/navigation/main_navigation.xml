@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/userLoginFragment">
+
+    <fragment
+        android:id="@+id/userLoginFragment"
+        android:name="com.example.enigmabank.fragments.user.UserLoginFragment"
+        android:label="fragment_user_login"
+        tools:layout="@layout/fragment_user_login" >
+        <action
+            android:id="@+id/action_userLoginFragment_to_userMainMenuFragment"
+            app:destination="@id/userMainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userMainMenuFragment"
+        android:name="com.example.enigmabank.fragments.user.UserMainMenuFragment"
+        android:label="fragment_user_main_menu"
+        tools:layout="@layout/fragment_user_main_menu" >
+        <action
+            android:id="@+id/action_userMainMenuFragment_to_transactionListFragment"
+            app:destination="@id/transactionListFragment" />
+        <action
+            android:id="@+id/action_userMainMenuFragment_to_inputRecipentFragment"
+            app:destination="@id/inputRecipentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionListFragment"
+        android:name="com.example.enigmabank.fragments.transaction.TransactionListFragment"
+        android:label="fragment_transaction_list"
+        tools:layout="@layout/fragment_transaction_list" />
+    <fragment
+        android:id="@+id/inputRecipentFragment"
+        android:name="com.example.enigmabank.fragments.transaction.sendmoney.InputRecipentFragment"
+        android:label="fragment_input_recipent"
+        tools:layout="@layout/fragment_input_recipent" >
+        <action
+            android:id="@+id/action_inputRecipentFragment_to_inputNominalFragment"
+            app:destination="@id/inputNominalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputNominalFragment"
+        android:name="com.example.enigmabank.fragments.transaction.sendmoney.InputNominalFragment"
+        android:label="fragment_input_nominal"
+        tools:layout="@layout/fragment_input_nominal" >
+        <action
+            android:id="@+id/action_inputNominalFragment_to_transferSuccessFragment"
+            app:destination="@id/transferSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transferSuccessFragment"
+        android:name="com.example.enigmabank.fragments.transaction.sendmoney.TransferSuccessFragment"
+        android:label="fragment_transfer_success"
+        tools:layout="@layout/fragment_transfer_success" >
+        <action
+            android:id="@+id/action_transferSuccessFragment_to_userMainMenuFragment"
+            app:destination="@id/userMainMenuFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.user.UserMainMenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="51dp"
+        android:background="#394EB6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/balanceUserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 12000"
+            android:textColor="#E6E6E6"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance"
+            android:textColor="#E6E6E6"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/balanceUserInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.58000004" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="User :"
+            android:textColor="#D5D5D5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/usernameUserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="4dp"
+            android:text="Gerin"
+            android:textColor="#E4E4E4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.100000024">
+
+        <ImageView
+            android:id="@+id/buttonGoToTransaction"
+            android:layout_width="81dp"
+            android:layout_height="72dp"
+            android:layout_marginRight="20dp"
+            android:background="#394EB6"
+            android:src="@drawable/ic_baseline_account_balance_24" />
+
+        <ImageView
+            android:id="@+id/buttonGoToHistoryTransaction"
+            android:layout_width="81dp"
+            android:layout_height="72dp"
+            android:layout_marginRight="20dp"
+            android:background="#394EB6"
+            android:src="@drawable/ic_baseline_history_24" />
+
+        <ImageView
+            android:id="@+id/buttonGoToCallCenter"
+            android:layout_width="81dp"
+            android:layout_height="72dp"
+            android:background="#394EB6"
+            android:src="@drawable/ic_baseline_call_24" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
