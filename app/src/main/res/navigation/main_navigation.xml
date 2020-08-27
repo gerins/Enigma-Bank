@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_userLoginFragment_to_userMainMenuFragment"
             app:destination="@id/userMainMenuFragment" />
+        <action
+            android:id="@+id/action_userLoginFragment_to_uploadImageActivity"
+            app:destination="@id/uploadImageActivity" />
     </fragment>
     <fragment
         android:id="@+id/userMainMenuFragment"
@@ -58,4 +61,9 @@
             android:id="@+id/action_transferSuccessFragment_to_userMainMenuFragment"
             app:destination="@id/userMainMenuFragment" />
     </fragment>
+    <activity
+        android:id="@+id/uploadImageActivity"
+        android:name="com.example.enigmabank.UploadImageActivity"
+        android:label="activity_upload_image"
+        tools:layout="@layout/activity_upload_image" />
 </navigation>

@@ -9,17 +9,20 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
+import com.example.enigmabank.MyApplication
 import com.example.enigmabank.R
 import com.example.enigmabank.model.user.User
 import com.example.enigmabank.model.user.UserViewModel
 import kotlinx.android.synthetic.main.fragment_user_main_menu.*
+import javax.inject.Inject
 
 class UserMainMenuFragment : Fragment() {
-    private val userViewModel by activityViewModels<UserViewModel>()
+    //    private val userViewModel by activityViewModels<UserViewModel>()
+    @Inject lateinit var userViewModel: UserViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        (activity?.applicationContext as MyApplication).applicationComponent.inject(this)
     }
 
     override fun onCreateView(
@@ -43,9 +46,8 @@ class UserMainMenuFragment : Fragment() {
         }
 
         buttonGoToTransaction.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_userMainMenuFragment_to_inputRecipentFragment)
+            Navigation.findNavController(view)
+                .navigate(R.id.action_userMainMenuFragment_to_inputRecipentFragment)
         }
     }
-
-
 }

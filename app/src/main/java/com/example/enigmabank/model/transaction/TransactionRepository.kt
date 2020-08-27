@@ -38,7 +38,6 @@ class TransactionRepository(val transactionAPI: TransactionAPI) {
                 println(t)
                 println("=============================")
             }
-
         })
     }
 }
